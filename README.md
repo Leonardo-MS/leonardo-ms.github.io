@@ -1,3 +1,1 @@
-# leosouza.github.io - leonardosouza.com
-
-My personal website used to write abou tech, life and experiences.
+My site to write about me, life and tech!

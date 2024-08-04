@@ -1,35 +1,112 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home</title>
-<meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Home" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Home","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Souza | Blog</title>
+  
+  <link rel="stylesheet" href="/assets/css/blog.css" />
+  
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  <script src="/assets/js/categories.js"></script>
+  <script>
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme")
+      );
+    }
+  </script>
+  
+</head>
 
-  </head>
   <body>
-    <nav>
-    
-      <a href="/" class="current">Home</a>
-    
-      <a href="/about.html" >About</a>
-    
-      <a href="/blog.html" >Blog</a>
-    
-</nav>
-    <h1>hello world!</h1>
+    <main>
+      <header>
+  <a class="site-title" href="/">Leonardo Souza</a>
+  <!-- dark/light mode -->
+  <span id="dark-mode-toggle" style="cursor: pointer">
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 16 16"
+      height="1.2em"
+      width="1.2em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13V2a6 6 0 1 1 0 12z"
+      ></path>
+    </svg>
+  </span>
+</header>
+ <section id="bio">
+  <section id="img-wrapper">
+    <img src="https://avatars.githubusercontent.com/leonardo-ms" alt="" />
+  </section>
+  <section id="bio-wrapper">
+    <div id="text-wrapper"> <p> Hi! I'm Leonardo, but you can call me Leo. </p> <p> 💻 dev, 10+ yrs coding across continents 🌎 </p> <p> sports buff, tennis enthusiast 🎾 </p> </div>
+    <div id="social-wrapper">
+      
+      <a href="https://www.linkedin.com/in/leonardo-m-souza/" target="_blank">
+        <img src="/assets/icons/linkedin.png" alt="" />
+      </a>
+      
+      <a href="https://github.com/Leonardo-MS" target="_blank">
+        <img src="/assets/icons/github.png" alt="" />
+      </a>
+      
+      <a href="https://x.com/leosouzatech" target="_blank">
+        <img src="/assets/icons/twitter.png" alt="" />
+      </a>
+      
+      <a href="mailto:leonardo.souza.tech@gmail.com" target="_blank">
+        <img src="/assets/icons/email.png" alt="" />
+      </a>
+      
+      <a href="https://drive.google.com/file/d/1-KbCnkoDOTytfCr3hChbO688Q01XdPZl/view" target="_blank">
+        <img src="/assets/icons/cv.png" alt="" />
+      </a>
+      
+    </div>
+  </section>
+</section>
+
+      <section class="articles">
+        
+        <article class="article">
+          <h2 class="article-title">
+            <a href="/posts/about-me/"> About me </a>
+          </h2>
+          <small class="date">03 Aug 2024</small>
+          <div class="categories">
+            
+            <a href="#!" data-base-url="" class="category"
+              >bio</a
+            >
+            
+            <a href="#!" data-base-url="" class="category"
+              >about</a
+            >
+            
+          </div>
+        </article>
+        
+      </section>
+      <footer>
+  2024 | Leonardo Souza</p>
+</footer>
+<script src="/assets/js/mode.js" defer></script>
+
+    </main>
+    <section id="category-modal-bg"></section>
+<section id="category-modal">
+  <h1 id="category-modal-title"></h1>
+  <section id="category-modal-content"></section>
+</section>
+
   </body>
 </html>
